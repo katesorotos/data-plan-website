@@ -11,16 +11,16 @@ $(".hide_total").hide();
 $("#payment").hide();
 
 $(".wolf--price").click(function(event) {
-   sub_total = 0;
-   var wolf_gb = this.getAttribute("data-gb");
+  sub_total = 0;
+  var wolf_gb = this.getAttribute("data-gb");
 
-   var wolf_price = parseInt(this.getAttribute("data_price"));
-   sub_total = sub_total + wolf_price;
-   $("#sub--total").text(sub_total);
-   console.log('sub_total ' +sub_total);
-   $("#payment").show();
-   $(".hide_sub").show();
-   $("#total").empty();
+  var wolf_price = parseInt(this.getAttribute("data_price"));
+  sub_total = sub_total + wolf_price;
+  $("#sub--total").text(sub_total);
+  console.log('sub_total ' + sub_total);
+  $("#payment").show();
+  $(".hide_sub").show();
+  $("#total").empty();
 });
 
 $(".wolf--plan").click(function(event) {
@@ -42,36 +42,36 @@ $("#payment").hide();
 
 // GB
 $(".chatter--price").click(function(event) {
-   sub_total = 0;
-   var chatter_gb = this.getAttribute("data-gb");
+  sub_total = 0;
+  var chatter_gb = this.getAttribute("data-gb");
 
-   var chatter_price = parseInt(this.getAttribute("data_price"));
-   sub_total = sub_total + chatter_price;
-   $("#sub--total").text(sub_total);
-   console.log('sub '+sub_total);
-    $("#mins").show();
-    $(".sub_2").show();
+  var chatter_price = parseInt(this.getAttribute("data_price"));
+  sub_total = sub_total + chatter_price;
+  $("#sub--total").text(sub_total);
+  console.log('sub ' + sub_total);
+  $("#mins").show();
+  $(".sub_2").show();
 
-    $("#sub--total_2").empty();
-    $("#total").empty();
-   // $(".hide_total").hide();
+  $("#sub--total_2").empty();
+  $("#total").empty();
+  // $(".hide_total").hide();
 });
 
 // Mins
 $(".chatter--mins").click(function(event) {
-   sub_total_2 = 0;
-   var chatter_mins = this.getAttribute("data-mins");
+  sub_total_2 = 0;
+  var chatter_mins = this.getAttribute("data-mins");
 
-   var chatter_mins_price = parseInt(this.getAttribute("data_mins_price"));
-   sub_total_2 = sub_total + chatter_mins_price;
-   $("#sub--total_2").text(sub_total_2);
-   console.log('min sub ' +sub_total);
-   console.log('sub2 ' +sub_total_2);
-   // $("#sub_1").hide();
-   $("#sub_2").show();
-   $("#payment").show();
-   $("#total").empty();
-   // $(".hide_total").hide();
+  var chatter_mins_price = parseInt(this.getAttribute("data_mins_price"));
+  sub_total_2 = sub_total + chatter_mins_price;
+  $("#sub--total_2").text(sub_total_2);
+  console.log('min sub ' + sub_total);
+  console.log('sub2 ' + sub_total_2);
+  // $("#sub_1").hide();
+  $("#sub_2").show();
+  $("#payment").show();
+  $("#total").empty();
+  // $(".hide_total").hide();
 });
 
 // Monthly/Annually
@@ -87,22 +87,58 @@ $(".chatter--plan").click(function(event) {
 $("#family_gb").hide();
 $("#payment").hide();
 
+var fam_sim = 0;
+
 // number of sim cards
 $(".family--sim").click(function(event) {
-  var fam_sim = parseInt(this.getAttribute("data_sim"));
+  fam_sim = this.getAttribute("data_sim");
   $("#family_gb").show();
+  console.log('famsim ca ' + fam_sim);
 })
 
 // GB
 $(".family--gb").click(function(event) {
-  var fam_gb = parseInt(this.getAttribute("data-gb"));
+  $("#sub--total").empty();
+  var fam_gb = this.getAttribute("data-gb");
   $("#payment").show();
-
+  console.log('famsim gb ' + fam_sim);
   fam_total = 0;
 
-if((fam_sim = "1") && (fam_gb = "1GB")) {
-  fam_total = "14";
-}
+//one sim
+  if ((fam_sim == "1") && (fam_gb == "1GB")) {
+    fam_total = "14";
+  } else if ((fam_sim == "1") && (fam_gb == "10GB")) {
+    fam_total = "20";
+  } else if ((fam_sim == "1") && (fam_gb == "20GB")) {
+    fam_total = "30";
+  } else if ((fam_sim == "1") && (fam_gb == "40GB")) {
+    fam_total = "40";
+  }
 
-$("#sub--total").text(fam_total);
+//two sims
+  if ((fam_sim == "2") && (fam_gb == "1GB")) {
+    fam_total = "21.20";
+  } else if ((fam_sim == "2") && (fam_gb == "10GB")) {
+    fam_total = "32";
+  } else if ((fam_sim == "2") && (fam_gb == "20GB")) {
+    fam_total = "50";
+  } else if ((fam_sim == "2") && (fam_gb == "40GB")) {
+    fam_total = "68";
+  }
+
+  //three sims
+    if ((fam_sim == "3") && (fam_gb == "1GB")) {
+      fam_total = "21.20";
+    } else if ((fam_sim == "3") && (fam_gb == "10GB")) {
+      fam_total = "32";
+    } else if ((fam_sim == "3") && (fam_gb == "20GB")) {
+      fam_total = "50";
+    } else if ((fam_sim == "3") && (fam_gb == "40GB")) {
+      fam_total = "68";
+    }
+
+
+
+
+  $("#sub--total").text(fam_total);
 })
