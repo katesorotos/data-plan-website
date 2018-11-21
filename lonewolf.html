@@ -50,14 +50,19 @@
     <h1>Lonewolf</h1>
     <h3>Data only sim card</h3>
     <h3>Choose your GB per month</h3>
-    <button class="wolf--price" data-gb="3GB" data-price="15">3 GB</button>
-    <button class="wolf--price" data-gb="6GB" data-price="17">6 GB</button>
-    <button class="wolf--price" data-gb="15GB" data-price="22">15 GB</button>
-    <button class="wolf--price" data-gb="30GB" data-price="27">30 GB</button>
+    <button class="wolf--price" data-gb="3GB" data_price="15">3 GB</button>
+    <button class="wolf--price" data-gb="6GB" data_price="17">6 GB</button>
+    <button class="wolf--price" data-gb="15GB" data_price="22">15 GB</button>
+    <button class="wolf--price" data-gb="30GB" data_price="27">30 GB</button>
     <h3>Choose your payment plan</h3>
-    <button>Monthly</button>
-    <button>Annually</button>
+    <button class="wolf--plan" data-month="1">Monthly</button>
+    <button class="wolf--plan" data-month="12">Annually</button>
     </section>
+
+		<section>
+			<h3>Sub-total: <span id="sub--total"></span></h3>
+			<h2>Total: <span id="total"></span></h2>
+		</section>
 
 
   <footer>
@@ -77,5 +82,8 @@
   <p>&#169; 2018 Connected Limited Registered office: Connected House, 81 Newgate Street, London, EC1A 7AJ.</p>
   <p>Registered in England No 1234567</p>
   </footer>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="js/lonewolf.js"></script>
   </body>
   </html>
