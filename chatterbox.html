@@ -49,7 +49,7 @@
 
   <section>
     <h1>Chatterbox</h1>
-    <h3>Data, minutes and texts</h3>
+    <h3>Data, minutes and unlimited texts</h3>
 
     <h3>Choose your GB per month</h3>
     <button class="chatter--price" data-gb="1GB" data_price="14">1 GB</button>
@@ -57,14 +57,20 @@
     <button class="chatter--price" data-gb="10GB" data_price="20">10 GB</button>
     <button class="chatter--price" data-gb="20GB" data_price="30">20 GB</button>
 
+    <section id="sub_1">
+			<h3>Sub-total: <span id="sub--total"></span></h3>
+		</section>
+
+<section id="mins">
     <h3>Choose your mins per month</h3>
     <button class="chatter--mins" data-mins="180mins" data_mins_price="3">180 mins</button>
     <button class="chatter--mins" data-mins="300mins" data_mins_price="5">300 mins</button>
-    <button class="chatter--price" data-mins="600mins" data_mins_price="10">600 mins</button>
+    <button class="chatter--mins" data-mins="600mins" data_mins_price="10">600 mins</button>
     <button class="chatter--mins" data-mins="unlimited" data_mins_price="12">Unlimited</button>
+    </section>
 
-		<section class="hide_sub">
-			<h3>Sub-total: <span id="sub--total"></span></h3>
+		<section id="sub_2">
+			<h3>Sub-total: <span id="sub--total_2"></span></h3>
 		</section>
 
 		<div id="payment">
