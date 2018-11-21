@@ -94,6 +94,7 @@ $(".family--sim").click(function(event) {
   fam_sim = this.getAttribute("data_sim");
   $("#family_gb").show();
   console.log('famsim ca ' + fam_sim);
+  $("#sub--total").empty();
 })
 
 // GB
@@ -128,16 +129,36 @@ $(".family--gb").click(function(event) {
 
   //three sims
     if ((fam_sim == "3") && (fam_gb == "1GB")) {
-      fam_total = "21.20";
+      fam_total = "28.40";
     } else if ((fam_sim == "3") && (fam_gb == "10GB")) {
-      fam_total = "32";
+      fam_total = "44";
     } else if ((fam_sim == "3") && (fam_gb == "20GB")) {
-      fam_total = "50";
+      fam_total = "70";
     } else if ((fam_sim == "3") && (fam_gb == "40GB")) {
-      fam_total = "68";
+      fam_total = "96";
     }
 
+    //four sims
+      if ((fam_sim == "4") && (fam_gb == "1GB")) {
+        fam_total = "35.60";
+      } else if ((fam_sim == "4") && (fam_gb == "10GB")) {
+        fam_total = "56";
+      } else if ((fam_sim == "4") && (fam_gb == "20GB")) {
+        fam_total = "90";
+      } else if ((fam_sim == "4") && (fam_gb == "40GB")) {
+        fam_total = "124";
+      }
 
+      //five sims
+        if ((fam_sim == "5") && (fam_gb == "1GB")) {
+          fam_total = "42.80";
+        } else if ((fam_sim == "5") && (fam_gb == "10GB")) {
+          fam_total = "68";
+        } else if ((fam_sim == "5") && (fam_gb == "20GB")) {
+          fam_total = "110";
+        } else if ((fam_sim == "5") && (fam_gb == "40GB")) {
+          fam_total = "152";
+        }
 
 
   $("#sub--total").text(fam_total);
