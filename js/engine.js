@@ -160,6 +160,15 @@ $(".family--gb").click(function(event) {
           fam_total = "152";
         }
 
-
   $("#sub--total").text(fam_total);
 })
+
+// Monthly/Annually
+$(".family--plan").click(function(event) {
+  var family_month = parseInt(this.getAttribute("data-month"));
+  fam_total.valueOf();
+  total = fam_total * family_month;
+  $("#total").text(total);
+  console.log('total ' + total);
+  $(".hide_total").show();
+});
