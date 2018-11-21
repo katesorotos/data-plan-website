@@ -19,7 +19,7 @@ $(".wolf--price").click(function(event) {
    console.log('sub_total ' +sub_total);
    $("#payment").show();
    $(".hide_sub").show();
-   $(".hide_total").hide();
+   $("#total").empty();
 });
 
 $(".wolf--plan").click(function(event) {
@@ -52,6 +52,7 @@ $(".chatter--price").click(function(event) {
     $(".sub_2").show();
 
     $("#sub--total_2").empty();
+    $("#total").empty();
    // $(".hide_total").hide();
 });
 
@@ -67,23 +68,20 @@ $(".chatter--mins").click(function(event) {
    console.log('sub2 ' +sub_total_2);
    // $("#sub_1").hide();
    $("#sub_2").show();
+   $("#payment").show();
+   $("#total").empty();
    // $(".hide_total").hide();
 });
 
 // Monthly/Annually
-$(".chatter--mins").click(function(event) {
-   sub_total_2 = 0;
-   var chatter_mins = this.getAttribute("data-mins");
-
-   var chatter_mins_price = parseInt(this.getAttribute("data_mins_price"));
-   sub_total_2 = sub_total + chatter_mins_price;
-   $("#sub--total_2").text(sub_total_2);
-   console.log('min sub ' +sub_total);
-   console.log('sub2 ' +sub_total_2);
-   // $("#sub_1").hide();
-   $("#sub_2").show();
-   // $(".hide_total").hide();
+$(".chatter--plan").click(function(event) {
+  var chatter_month = parseInt(this.getAttribute("data-month"));
+  total = sub_total_2 * chatter_month;
+  $("#total").text(total);
+  console.log('total ' + total);
+  $(".hide_total").show();
 });
+
 
 
 //
