@@ -5,6 +5,7 @@ var choices = ["3GB", "6GB", "15GB", "30GB"];
 var sub_total = 0;
 var total = 0;
 var sub_total_2 = 0;
+var fam_total = 0;
 
 $(".hide_total").hide();
 $("#payment").hide();
@@ -84,8 +85,24 @@ $(".chatter--plan").click(function(event) {
 
 // Family
 $("#family_gb").hide();
+$("#payment").hide();
 
+// number of sim cards
 $(".family--sim").click(function(event) {
   var fam_sim = parseInt(this.getAttribute("data_sim"));
   $("#family_gb").show();
+})
+
+// GB
+$(".family--gb").click(function(event) {
+  var fam_gb = parseInt(this.getAttribute("data-gb"));
+  $("#payment").show();
+
+  fam_total = 0;
+
+if((fam_sim = "1") && (fam_gb = "1GB")) {
+  fam_total = "14";
+}
+
+$("#sub--total").text(fam_total);
 })
