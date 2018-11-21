@@ -82,13 +82,10 @@ $(".chatter--plan").click(function(event) {
   $(".hide_total").show();
 });
 
+// Family
+$("#family_gb").hide();
 
-
-//
-// $(".chatter--mins").click(function(event) {
-//   var wolf_month = parseInt(this.getAttribute("data-month"));
-//   total = sub_total * wolf_month;
-//   $("#total").text(total);
-//   console.log(total);
-//   $(".hide_total").show();
-// })
+$(".family--sim").click(function(event) {
+  var fam_sim = parseInt(this.getAttribute("data_sim"));
+  $("#family_gb").show();
+})
