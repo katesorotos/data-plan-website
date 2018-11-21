@@ -39,6 +39,7 @@ $("#mins").hide();
 $(".hide_total").hide();
 $("#payment").hide();
 
+// GB
 $(".chatter--price").click(function(event) {
    sub_total = 0;
    var chatter_gb = this.getAttribute("data-gb");
@@ -47,11 +48,14 @@ $(".chatter--price").click(function(event) {
    sub_total = sub_total + chatter_price;
    $("#sub--total").text(sub_total);
    console.log('sub '+sub_total);
-   $("#mins").show();
-   $(".sub_2").show();
-   $(".hide_total").hide();
+    $("#mins").show();
+    $(".sub_2").show();
+
+    $("#sub--total_2").empty();
+   // $(".hide_total").hide();
 });
 
+// Mins
 $(".chatter--mins").click(function(event) {
    sub_total_2 = 0;
    var chatter_mins = this.getAttribute("data-mins");
@@ -61,10 +65,26 @@ $(".chatter--mins").click(function(event) {
    $("#sub--total_2").text(sub_total_2);
    console.log('min sub ' +sub_total);
    console.log('sub2 ' +sub_total_2);
-   $("#sub_1").hide();
+   // $("#sub_1").hide();
    $("#sub_2").show();
-   $(".hide_total").hide();
+   // $(".hide_total").hide();
 });
+
+// Monthly/Annually
+$(".chatter--mins").click(function(event) {
+   sub_total_2 = 0;
+   var chatter_mins = this.getAttribute("data-mins");
+
+   var chatter_mins_price = parseInt(this.getAttribute("data_mins_price"));
+   sub_total_2 = sub_total + chatter_mins_price;
+   $("#sub--total_2").text(sub_total_2);
+   console.log('min sub ' +sub_total);
+   console.log('sub2 ' +sub_total_2);
+   // $("#sub_1").hide();
+   $("#sub_2").show();
+   // $(".hide_total").hide();
+});
+
 
 //
 // $(".chatter--mins").click(function(event) {
