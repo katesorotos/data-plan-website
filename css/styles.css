@@ -1,9 +1,11 @@
 .jumbotron {
   background-image: url("https://i.makeagif.com/media/5-27-2017/ZWL7dc.gif");
 }
+
 body {
-  padding-top:68px;
+  padding-top: 68px;
 }
+
 .colophon {
   padding-top: 100px;
 }
