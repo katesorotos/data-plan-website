@@ -95,11 +95,13 @@ $(".family--sim").click(function(event) {
   $("#family_gb").show();
   console.log('famsim ca ' + fam_sim);
   $("#sub--total").empty();
+  $("#total").empty();
 })
 
 // GB
 $(".family--gb").click(function(event) {
   $("#sub--total").empty();
+  $("#total").empty();
   var fam_gb = this.getAttribute("data-gb");
   $("#payment").show();
   console.log('famsim gb ' + fam_sim);
