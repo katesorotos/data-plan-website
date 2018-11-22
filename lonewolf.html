@@ -5,85 +5,111 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/styles.css"/>
+	<link rel="stylesheet" href="css/styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
 
 	<title>Lonewolf</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <div class="container">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container">
 
-      <a class="navbar-brand" href="index.html">
-        <img src="images/logo.jpg" alt="Connected Telecoms logo." width="50" height="50" class="d-inline-block align-top logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.jpg" alt="Connected Telecoms logo." width="50" height="50" class="d-inline-block align-top logo"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Packages
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="lonewolf.html">Lonewolf</a>
-              <a class="dropdown-item" href="chatterbox.html">Chatterbox</a>
-              <a class="dropdown-item" href="family.html">Family</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Help & Information</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-        </ul>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Packages
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="lonewolf.html">Lonewolf</a>
+								<a class="dropdown-item" href="chatterbox.html">Chatterbox</a>
+								<a class="dropdown-item" href="family.html">Family</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Help & Information</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">News</a>
+						</li>
+					</ul>
 
-        <a class="navbar-brand" href="#">
-          <img src="images/search-3.jpg" alt="Search icon." width="50" height="50" class="d-inline-block align-top logo"></a>
-        <a class="navbar-brand" href="#">
-          <img src="images/trolley-2.jpg" alt="Basket icon." width="50" height="50" class="d-inline-block align-top logo"></a>
+					<a class="navbar-brand" href="#">
+						<img src="images/search-3.jpg" alt="Search icon." width="50" height="50" class="d-inline-block align-top logo"></a>
+					<a class="navbar-brand" href="#">
+						<img src="images/trolley-2.jpg" alt="Basket icon." width="50" height="50" class="d-inline-block align-top logo"></a>
 
-        <!-- <form class="form-inline my-2 my-lg-0">
+					<!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form> -->
-      </div>
+				</div>
 
-    </div>
-    <!--/*container-->
-  </nav>
-	
-	<section>
-		<h2>Limited time offer</h2>
-		<h3>up to 30GB</h3>
-		<p>From £15/mo</p>
-	</section>
+			</div>
+			<!--/*container-->
+		</nav>
+	</header>
 
-	<section>
-		<h1>Lonewolf</h1>
-		<h3>Data only sim card</h3>
-		<h3>Choose your GB per month</h3>
-		<button class="wolf--price" data-gb="3GB" data_price="15">3 GB</button>
-		<button class="wolf--price" data-gb="6GB" data_price="17">6 GB</button>
-		<button class="wolf--price" data-gb="15GB" data_price="22">15 GB</button>
-		<button class="wolf--price" data-gb="30GB" data_price="27">30 GB</button>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<section>
+					<h2>Limited time offer</h2>
+					<h3>up to 30GB</h3>
+					<p>From £15/mo</p>
+				</section>
+			</div>
+			<!--/.col-md-4-->
 
-		<section class="hide_sub">
-			<h3>Sub-total: <span id="sub--total"></span></h3>
-		</section>
+			<div class="col-md-8 calculator">
+				<section>
+					<h1>Lonewolf</h1>
+					<h3 class="explanation">Data only sim card</h3>
 
-		<div id="payment">
-			<h3>Choose your payment plan</h3>
-			<button class="wolf--plan" data-month="1">Monthly</button>
-			<button class="wolf--plan" data-month="12">Annually</button>
+					<div class="package-section">
+						<section>
+							<h3>Choose your GB per month</h3>
+							<button class="wolf--price" data-gb="3GB" data_price="15">3 GB</button>
+							<button class="wolf--price" data-gb="6GB" data_price="17">6 GB</button>
+							<button class="wolf--price" data-gb="15GB" data_price="22">15 GB</button>
+							<button class="wolf--price" data-gb="30GB" data_price="27">30 GB</button>
+						</section>
+
+						<section class="hide_sub">
+							<h3>Sub-total: £<span id="sub--total"></span></h3>
+						</section>
+					</div>
+					<!--/.package-section-->
+
+					<div class="package-section">
+						<section>
+							<div id="payment">
+								<h3>Choose your payment plan</h3>
+								<button class="wolf--plan" data-month="1">Monthly</button>
+								<button class="wolf--plan" data-month="12">Annually</button>
+							</div>
+						</section>
+
+						<section class="hide_total">
+							<h2>Total: £<span id="total"></span></h2>
+							<button id="buy">Buy Now</button>
+						</section>
+					</div>
+					<!--/.package-section-->
+			</div>
+			<!--/.col-md-8-->
 		</div>
-	</section>
-
-	<section class="hide_total">
-		<h2>Total: <span id="total"></span></h2>
-	</section>
+		<!--/.row-->
+	</div>
+	<!--/.container-->
 
 
 	<div class="footer-background">
@@ -93,11 +119,11 @@
 				<div class="row  justify-content-center">
 					<form class="form">
 						<div class="text-center">
-						<label for="email">Thinking of joining?</label>
+							<label for="email">Thinking of joining?</label>
 						</div>
 						<div class="form-inline">
-						<input class="form-control" type="text" name="email" placeholder="Enter your email" id="email">
-						<button class="btn btn-success form-btn" type="submit">Sign up to our newsletter</button>
+							<input class="form-control" type="text" name="email" placeholder="Enter your email" id="email">
+							<button class="btn btn-success form-btn" type="submit">Sign up to our newsletter</button>
 						</div>
 					</form>
 				</div>
@@ -109,9 +135,9 @@
 							<li class="col-md-3"><a class="end" href="#">| Privacy Policy </a></li>
 							<li class="col-md-3"><a class="end" href="#">| Cookie Policy</a></li>
 							<li class="col-md-3"><a class="end" href="#">| Terms & Conditions</a></li>
-							<li class="col-md-1"><a class="end" href="https://www.facebook.com"><img class="rounded" src="images/facebook.jpg" ></a></li>
-							<li class="col-md-1"><a class="end" href="https://www.instagram.com"><img class="rounded" src="images/instagram.jpg" ></a></li>
-							<li class="col-md-1"><a class="end" href="https://www.twitter.com"><img class="rounded" src="images/twitter.jpg" ></a></li>
+							<li class="col-md-1"><a class="end" href="https://www.facebook.com"><img class="rounded" src="images/facebook.jpg"></a></li>
+							<li class="col-md-1"><a class="end" href="https://www.instagram.com"><img class="rounded" src="images/instagram.jpg"></a></li>
+							<li class="col-md-1"><a class="end" href="https://www.twitter.com"><img class="rounded" src="images/twitter.jpg"></a></li>
 						</ul> <!-- /.row.sticky-footer-navbar -->
 					</div> <!-- /.container-fluid -->
 				</div>
