@@ -20,16 +20,18 @@
   font-size: 35px;
   text-shadow: 0.2px 0.2px white;
 }
-.jumbotron button {
+.jumbotron .btn-primary {
   /* font-family: 'Carrois Gothic', sans-serif; */
-  font-size: 20px;
+  font-size: 23px;
   margin-top: 50px;
-  padding: 10px 30px;
+  padding: 9px 27px;
   border-radius: 5px;
+  color: #343a40;
   background-color: #cdc7f0;
   border-color: #4f4e76;
+  font-family: 'Carrois Gothic', sans-serif;
 }
-.jumbotron button:hover {
+.jumbotron .btn-primary:hover {
   background-color: #4f4e76;
   color: white;
 }
@@ -43,9 +45,13 @@ body {
 .company-name {
   font-family: 'Carrois Gothic', sans-serif;
   color: #343a40;
-  /* font-weight: bold; */
   font-size: 60px;
   padding-top: 30px;
+}
+.mission {
+  font-family: 'Carrois Gothic', sans-serif;
+  color: #343a40;
+  font-size: 20px;
   padding-bottom: 20px;
 }
 .navbar {
@@ -60,4 +66,34 @@ body {
 .navbar-light a:hover {
   color: #4f4e76 !important;
   text-decoration: overline;
+}
+
+.cards{
+  padding:30px 0px;
+  font-family: 'Carrois Gothic', sans-serif;
+  color: #343a40;
+}
+.cards h5 {
+  font-weight: bold;
+}
+.cards span {
+  font-size: 30px;
+}
+.cards .btn-primary {
+  font-size: 20px;
+  /* margin-top: 50px; */
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #343a40;;
+  background-color: #cdc7f0;
+  border-color: #4f4e76;
+}
+.cards .btn-primary:hover {
+  background-color: #4f4e76;
+  color: white;
+}
+.plan-header {
+  padding-bottom: 30px;
+  font-family: 'Carrois Gothic', sans-serif;
+  color: #343a40;
 }
