@@ -101,8 +101,39 @@ body {
 }
 .colophon {
   margin-top: 150px;
-
+  padding-bottom: 50px;
+  font-family: 'Carrois Gothic', sans-serif;
+  color: white;
 }
 .footer-background {
   background-color: #343a40;
+}
+.form {
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+.form .btn {
+  margin-left: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  color: #343a40;
+  background-color: #cdc7f0;
+  border-color: #4f4e76;
+}
+.form .btn:hover {
+  background-color: #4f4e76;
+  color: white;
+}
+.colophon a {
+  color: white;
+}
+label {
+  font-size: 25px;
+}
+.links {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.colophon li {
+  border-radius: 3px;
 }
