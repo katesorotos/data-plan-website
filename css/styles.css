@@ -181,10 +181,17 @@ button:visited {
   font-size: 50px;
 }
 
-
 #buy {
   background-color: #59c3c3;
   border-color: #59c3c3;
   color: white;
   font-size: 30px;
+}
+
+h5 a{
+  color: white;
+}
+
+h5 a:hover{
+  color: white;
 }
