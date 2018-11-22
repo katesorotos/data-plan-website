@@ -6,12 +6,24 @@
   background-position: center;
   border-radius: 0;
 }
+
 .jumbotron h1 {
   font-family: 'Carrois Gothic', sans-serif;
   font-weight: bold;
   color: #343a40;
   text-shadow: 0.5px 0.5px white;
-  /* text-shadow: 3px solid white; */
+  font-size: 50px;
+  margin-top: 50px;
+}
+.jumbotron p {
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 30px;
+}
+.jumbotron button {
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 5px 10px;
 }
 body {
   padding-top: 68px;
@@ -32,3 +44,16 @@ body {
   background-color: white;
   opacity: 0.9;
 }
+.navbar-light a {
+   color: #343a40 !important;
+   font-weight: bold;
+   font-family: 'Carrois Gothic', sans-serif;
+}
+.navbar-light a:hover {
+  color: #4f4e76 !important;
+  text-decoration: overline;
+}
+/* .navbar-toggler-icon {
+  background-color: grey;
+  opacity: 0.2;
+} */
