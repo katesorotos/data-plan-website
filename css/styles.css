@@ -139,8 +139,48 @@ label {
 }
 
 .calculator {
+  font-family: 'Carrois Gothic', sans-serif;
+  color: #343a40;
   margin-top: 20px;
   background-color: #CCC;
   padding: 20px;
   border-radius: 5px;
+}
+
+.calculator h1 {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.calculator .explanation {
+  font-size:18px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  /* background-color: #f1edee; */
+  font-size: 22px;
+  background-color: #7cafc4;
+  border-color: #7cafc4;
+}
+
+.package-section {
+  padding: 10px 0;
+}
+
+.hide_total h2 {
+  font-size: 50px;
+}
+
+/* .family--sim {
+  background-color: #7cafc4;
+  border-color: #7cafc4;
+} */
+
+#buy {
+  background-color: #104f55;
 }
