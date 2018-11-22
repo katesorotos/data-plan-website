@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
 
   <title>Chatterbox</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
 
       <a class="navbar-brand" href="index.html">
@@ -54,18 +56,25 @@
     </div>
     <!--/*container-->
   </nav>
+</header>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
   <section>
     <h2>Chatterbox</h2>
     <h3>up to 20GB</h3>
     <h3>option of unlimited mins</h3>
     <p>From £14/mo</p>
   </section>
+  </div><!--./col-md-4-->
 
+<div class="col-md-8 calculator">
   <section>
     <h1>Chatterbox</h1>
-    <h3>Data, minutes and unlimited texts</h3>
+    <h3 class="explanation">Data, minutes and unlimited texts</h3>
 
+<div class="package-section">
     <h3>Choose your GB per month</h3>
     <button class="chatter--price" data-gb="1GB" data_price="14">1 GB</button>
     <button class="chatter--price" data-gb="6GB" data_price="18">6 GB</button>
@@ -73,9 +82,11 @@
     <button class="chatter--price" data-gb="20GB" data_price="30">20 GB</button>
 
     <section id="sub_1">
-      <h3>Sub-total: <span id="sub--total"></span></h3>
+      <h3>Sub-total: £<span id="sub--total"></span></h3>
     </section>
+    </div><!--/.package-section-->
 
+<div class="package-section">
     <section id="mins">
       <h3>Choose your mins per month</h3>
       <button class="chatter--mins" data-mins="180mins" data_mins_price="3">180 mins</button>
@@ -85,19 +96,29 @@
     </section>
 
     <section id="sub_2">
-      <h3>Sub-total: <span id="sub--total_2"></span></h3>
+      <h3>Sub-total: £<span id="sub--total_2"></span></h3>
     </section>
+  </div><!--/.package-section-->
 
+<div class="package-section">
+  <section>
     <div id="payment">
       <h3>Choose your payment plan</h3>
       <button class="chatter--plan" data-month="1">Monthly</button>
       <button class="chatter--plan" data-month="12">Annually</button>
     </div>
   </section>
+</div><!--/.package-section-->
 
+<div class="package-section">
   <section class="hide_total">
-    <h2>Total: <span id="total"></span></h2>
+    <h2>Total: £<span id="total"></span></h2>
+      <button id="buy">Buy Now</button>
   </section>
+</div><!--/.package-section-->
+  </div><!--/col-md-8 calculator-->
+    </div><!--/.row-->
+    </div><!--/.container-->
 
 
   <div class="footer-background">
@@ -140,7 +161,7 @@
       </div>
     </footer>
   </div>
-  
+
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="js/engine.js"></script>

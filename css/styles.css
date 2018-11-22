@@ -148,7 +148,7 @@ label {
 }
 
 .calculator h1 {
-  font-size: 50px;
+  font-size: 60px;
   padding-bottom: 10px;
 }
 
@@ -162,10 +162,15 @@ button {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  /* background-color: #f1edee; */
   font-size: 22px;
   background-color: #7cafc4;
   border-color: #7cafc4;
+  color: white;
+}
+
+button:visited {
+  background-color: #348aa7;
+  color: #343a40;
 }
 
 .package-section {
@@ -176,11 +181,10 @@ button {
   font-size: 50px;
 }
 
-/* .family--sim {
-  background-color: #7cafc4;
-  border-color: #7cafc4;
-} */
 
 #buy {
-  background-color: #104f55;
+  background-color: #59c3c3;
+  border-color: #59c3c3;
+  color: white;
+  font-size: 30px;
 }
