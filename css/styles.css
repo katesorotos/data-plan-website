@@ -12,18 +12,26 @@
   font-weight: bold;
   color: #343a40;
   text-shadow: 0.5px 0.5px white;
-  font-size: 50px;
+  font-size: 55px;
   margin-top: 50px;
 }
 .jumbotron p {
   font-family: 'Carrois Gothic', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
+  text-shadow: 0.2px 0.2px white;
 }
 .jumbotron button {
-  font-family: 'Carrois Gothic', sans-serif;
+  /* font-family: 'Carrois Gothic', sans-serif; */
   font-size: 20px;
   margin-top: 50px;
-  padding: 5px 10px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #cdc7f0;
+  border-color: #4f4e76;
+}
+.jumbotron button:hover {
+  background-color: #4f4e76;
+  color: white;
 }
 body {
   padding-top: 68px;
@@ -53,7 +61,3 @@ body {
   color: #4f4e76 !important;
   text-decoration: overline;
 }
-/* .navbar-toggler-icon {
-  background-color: grey;
-  opacity: 0.2;
-} */
