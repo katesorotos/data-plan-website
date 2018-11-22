@@ -137,3 +137,10 @@ label {
 .colophon li {
   border-radius: 3px;
 }
+
+.calculator {
+  margin-top: 20px;
+  background-color: #CCC;
+  padding: 20px;
+  border-radius: 5px;
+}
