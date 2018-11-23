@@ -37,6 +37,7 @@
 }
 body {
   padding-top: 68px;
+  font-family: 'Carrois Gothic', sans-serif;
   /* background-color: #DBE4EE; */
 }
 .company-name {
@@ -194,4 +195,36 @@ h5 a{
 
 h5 a:hover{
   color: white;
+}
+.packages {
+  padding-top: 50px;
+  font-family: 'Carrois Gothic', sans-serif;
+}
+.packages h3 {
+  color: #343a40;
+  font-size: 30px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 1px 3px;
+}
+.packages a:hover {
+  text-decoration: none;
+}
+.packages h3:hover {
+  font-weight: bold;
+  color: #348aa7;
+}
+.offers {
+  padding-top: 50px;
+  color: #343a40;
+}
+
+.phone-image {
+  background-image: url("../images/phone1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: 5px;
 }
