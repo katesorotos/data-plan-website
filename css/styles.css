@@ -15,11 +15,13 @@
   font-size: 55px;
   margin-top: 50px;
 }
+
 .jumbotron p {
   font-family: 'Carrois Gothic', sans-serif;
   font-size: 35px;
   text-shadow: 0.2px 0.2px white;
 }
+
 .jumbotron .btn-primary {
   /* font-family: 'Carrois Gothic', sans-serif; */
   font-size: 23px;
@@ -31,57 +33,67 @@
   border-color: #4f4e76;
   font-family: 'Carrois Gothic', sans-serif;
 }
+
 .jumbotron .btn-primary:hover {
   background-color: #4f4e76;
   color: white;
 }
+
 body {
   padding-top: 68px;
   font-family: 'Carrois Gothic', sans-serif;
   /* background-color: #DBE4EE; */
 }
+
 .company-name {
   font-family: 'Carrois Gothic', sans-serif;
   color: #343a40;
   font-size: 60px;
   padding-top: 30px;
 }
+
 .mission {
   font-family: 'Carrois Gothic', sans-serif;
   color: #343a40;
   font-size: 20px;
   padding-bottom: 20px;
 }
+
 .navbar {
   background-color: white;
   opacity: 0.9;
 }
+
 .navbar-light a {
-   color: #343a40 !important;
-   font-weight: bold;
-   font-family: 'Carrois Gothic', sans-serif;
+  color: #343a40 !important;
+  font-weight: bold;
+  font-family: 'Carrois Gothic', sans-serif;
 }
+
 .navbar-light a:hover {
   color: #4f4e76 !important;
   text-decoration: overline;
 }
 
-.cards{
-  padding:30px 0px;
+.cards {
+  padding: 30px 0px;
   font-family: 'Carrois Gothic', sans-serif;
   color: #343a40;
-
 }
+
 .cards .card-header {
   color: white;
   background-color: #160F29;
 }
+
 .cards h5 {
   font-weight: bold;
 }
+
 .cards span {
   font-size: 30px;
 }
+
 .cards .btn-primary {
   font-size: 20px;
   /* margin-top: 50px; */
@@ -91,28 +103,34 @@ body {
   background-color: #cdc7f0;
   border-color: #4f4e76;
 }
+
 .cards .btn-primary:hover {
   background-color: #4f4e76;
   color: white;
 }
+
 .plan-header {
   padding-bottom: 30px;
   font-family: 'Carrois Gothic', sans-serif;
   color: #343a40;
 }
+
 .colophon {
   margin-top: 150px;
   padding-bottom: 50px;
   font-family: 'Carrois Gothic', sans-serif;
   color: white;
 }
+
 .footer-background {
   background-color: #343a40;
 }
+
 .form {
   margin-top: 20px;
   padding-bottom: 50px;
 }
+
 .form .btn {
   margin-left: 10px;
   font-size: 17px;
@@ -121,20 +139,25 @@ body {
   background-color: #cdc7f0;
   border-color: #4f4e76;
 }
+
 .form .btn:hover {
   background-color: #4f4e76;
   color: white;
 }
+
 .colophon a {
   color: white;
 }
+
 label {
   font-size: 25px;
 }
+
 .links {
   margin-top: 40px;
   margin-bottom: 15px;
 }
+
 .colophon li {
   border-radius: 3px;
 }
@@ -143,7 +166,8 @@ label {
   font-family: 'Carrois Gothic', sans-serif;
   color: #343a40;
   margin-top: 20px;
-  background-color: #CCC;
+  background-color: #E6E8E6;
+  /* background-color: #CCC; */
   padding: 20px;
   border-radius: 5px;
 }
@@ -154,7 +178,7 @@ label {
 }
 
 .calculator .explanation {
-  font-size:18px;
+  font-size: 18px;
   padding-bottom: 20px;
   font-weight: bold;
 }
@@ -164,8 +188,9 @@ button {
   margin: 10px;
   border-radius: 5px;
   font-size: 22px;
-  background-color: #7cafc4;
-  border-color: #7cafc4;
+  background-color: #F15946;
+  /* background-color: #7cafc4;
+  border-color: #7cafc4; */
   color: white;
 }
 
@@ -189,17 +214,19 @@ button:visited {
   font-size: 30px;
 }
 
-h5 a{
+h5 a {
   color: white;
 }
 
-h5 a:hover{
+h5 a:hover {
   color: white;
 }
+
 .packages {
   padding-top: 50px;
   font-family: 'Carrois Gothic', sans-serif;
 }
+
 .packages h3 {
   color: #343a40;
   font-size: 30px;
@@ -208,23 +235,60 @@ h5 a:hover{
   border-radius: 5px;
   padding: 1px 3px;
 }
+
 .packages a:hover {
   text-decoration: none;
 }
+
 .packages h3:hover {
   font-weight: bold;
   color: #348aa7;
 }
+
 .offers {
   padding-top: 50px;
   color: #343a40;
 }
 
 .phone-image {
-  background-image: url("../images/phone1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: 20px;
   border-radius: 5px;
+  padding: 20px;
+}
+
+#lone-image {
+  background-image: url("../images/phone-4.jpg");
+}
+
+#chat-image {
+  background-image: url("../images/phone-2.jpg");
+  background-image: left;
+}
+
+#fam-image {
+  background-image: url("../images/phone-3.jpg");
+}
+
+.phone-image h3 {
+  font-size: 35px;
+  color: white;
+  text-shadow: 0.5px 0.5px black;
+}
+
+.phone-image p {
+  color: white;
+  text-shadow: 0.5px 0.5px black;
+}
+
+.phone-image span {
+  font-size: 60px;
+}
+
+hr {
+  background-color: #343a40;
+  height: 1px;
+  width: 85%;
 }
