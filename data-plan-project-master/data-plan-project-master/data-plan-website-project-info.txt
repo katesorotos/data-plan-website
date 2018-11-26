@@ -1,0 +1,72 @@
+
+Project: Data plan website
+
+----------------------------------------------------
+
+Brief
+
+The website you will make is for a telecommunications company selling data plans. The site needs to feature the different packages and offer a calculator for users to put together their own plan based on the options available for each package. The calculator needs to return the monthly or annual cost once a user has made their choice. There is a list of package options at the end of this section.
+
+----------------------------------------------------
+
+Pages and elements (minimum)
+
+- A home page (index.html) with a headline, mission statement, core call-to-action button and an introduction to the different packages.
+- A page for each package with these elements:
+  - The name and description
+  - An image relating to the featured package
+  - The minimum price for the package
+  - The package options
+  - The calculator
+  - Call-to-action
+- A contact page with a form. 
+- Global elements required on each page:
+  - Company name
+  - Main navigation
+  - Social media
+  - Legal info: copyright + additional navigation for Privacy, Terms of Use and Sitemap (these pages are optional to create, but the menu is required).
+
+
+----------------------------------------------------
+
+Package options
+
+----------------
+
+Lone wolf: data only sim card
+
+- Choose GB per month: 3GB (£15.00), 6GB (£17.00), 15GB (£22.00) or 30GB (£27.00)
+- Pay monthly / annually
+
+----------------
+
+Chatterbox: Sim card with data, minutes and texts
+
+- Choose GB per month: 1GB: £14.00, 6GB: £18.00, 10GB: £20.00, 20GB: £30.00
+- Choose minutes per month: 180 min (+ £3.00), 300 min (+ £5.00), 600 min (+ £10.00), unilimited min (+ £12.00)
+- Pay monthly / annually
+
+----------------
+
+Family: Up to 5 sim cards with data and unlimited minutes and texts
+
+- Choose GB per month + number of sim cards: 
+  - 1GB - (1): £14.00, (2): £21.20, (3): £28.40, (4): £35.60, (5): £42.80
+  - 10GB - (1): £20.00, (2): £32.00, (3): £44.00, (4): £56.00, (5): £68.00
+  - 20GB - (1): £30.00, (2): £50.00, (3): £70.00, (4): £90.00, (5): £110.00
+  - 40GB - (1): £40.00, (2): £68.00, (3): £96.00, (4): £124.00, (5): £152.00
+- Pay monthly / annually
+
+----------------------------------------------------
+
+Deliverables
+
+- Wireframe sketches, both for desktop and mobile displays. 
+- A clickable prototype created with MockFlow.
+- A shared Git repository, with sensible commit messages and a README file.
+- Good use of HTML elements demonstrating an understanding of the semantic value of tags.
+- Styling with CSS using Bootstrap, but there should be a reasonable amount of CSS overrides to make the website look unique.
+- Use jQuery for the calculator and any other functionality to improve the UX.
+- The website needs to be responsive.
+- A well organised project folder and good formatting of all code.
+- The final version hosted on GitHub pages.
